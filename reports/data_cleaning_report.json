@@ -1,5 +1,5 @@
 {
-  "started_at_utc": "2026-10-16T11:44:16.962164+00:00",
+  "started_at_utc": "2026-10-16T12:21:19.647247+00:00",
   "rows_received": 8839,
   "columns_received": [
     "incident_id",
@@ -75,5 +75,5 @@
     "dropped_missing_district_rows": 0
   },
   "rows_after_cleaning": 8800,
-  "finished_at_utc": "2026-10-16T11:44:17.181589+00:00"
+  "finished_at_utc": "2026-10-16T12:21:19.823415+00:00"
 }

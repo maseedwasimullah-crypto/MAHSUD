@@ -352,7 +352,20 @@ def main():
         "Sources & Methodology": lambda: page_sources(provenance, clean_report),
     }
     choice = st.sidebar.radio("Navigate", list(pages.keys()))
-    pages[choice]()
+    pages_requiring_data = {
+        "Data Overview",
+        "Historical Trends",
+        "District Analysis",
+        "Model Training & Evaluation",
+    }
+    if len(filtered) == 0 and choice in pages_requiring_data:
+        st.header(choice)
+        st.warning(
+            "No incidents match the current sidebar filters. Adjust the date range, "
+            "districts, or categories to see results."
+        )
+    else:
+        pages[choice]()
     st.sidebar.divider()
     st.sidebar.caption(
         "Responsible-use tool: historical aggregate research only. "

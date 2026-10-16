@@ -138,6 +138,16 @@ def test_monthly_series_is_regular_and_aggregates():
     assert [str(p) for p in series["period"]] == [str(p) for p in expected]
 
 
+def test_monthly_series_handles_empty_input():
+    cleaned, _ = clean_incident_data(_minimal_rows(), report_path=None)
+    empty = cleaned.iloc[0:0]
+    series = build_monthly_series(empty)
+    assert len(series) == 0
+    assert set(["period", "incident_count", "fatalities", "injuries", "month_start", "year", "month"]).issubset(
+        series.columns
+    )
+
+
 def test_chronological_split_no_overlap_and_order():
     df = generate_demo_dataset(n_duplicates=0, n_missing_dates=0, casualty_missing_rate=0.0, seed=1)
     cleaned, _ = clean_incident_data(df, report_path=None)

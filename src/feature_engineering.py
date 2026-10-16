@@ -28,6 +28,15 @@ def build_monthly_series(df: pd.DataFrame) -> pd.DataFrame:
         fatalities=("fatalities", "sum"),
         injuries=("injuries", "sum"),
     )
+    if len(grouped) == 0:
+        out = pd.DataFrame(
+            columns=["period", "incident_count", "fatalities", "injuries"]
+        )
+        out["month_start"] = pd.Series(dtype="datetime64[ns]")
+        out["year"] = pd.Series(dtype="int64")
+        out["month"] = pd.Series(dtype="int64")
+        out[TARGET_COL] = pd.Series(dtype="float64")
+        return out
     full_index = pd.period_range(periods.min(), periods.max(), freq="M")
     out = grouped.reindex(full_index, fill_value=0)
     out.index.name = "period"
