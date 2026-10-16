@@ -1,0 +1,34 @@
+{
+  "dataset_name": "MAHSUD demonstration dataset (SYNTHETIC)",
+  "is_real_incident_data": false,
+  "warning": "Every record in this file is computer-generated for software testing. None of these rows correspond to real-world events, people, or locations experiencing harm. Do not cite these numbers in research or journalism.",
+  "generated_on": "2026-10-16",
+  "generator": "src/data_collection.py::generate_demo_dataset",
+  "random_seed": 42,
+  "date_range": "2002-01-18 to 2024-12-31",
+  "rows": 8839,
+  "columns": [
+    "incident_id",
+    "incident_date",
+    "district",
+    "province",
+    "incident_category",
+    "fatalities",
+    "injuries",
+    "source_name",
+    "source_url",
+    "verification_status"
+  ],
+  "intentional_flaws": [
+    "30 duplicate rows (new IDs, identical content)",
+    "5 rows with missing incident_date",
+    "8% missing values in fatalities/injuries (missing must NOT be treated as zero)"
+  ],
+  "how_to_replace_with_real_data": [
+    "1. Obtain verified data from a documented source (see PUBLIC_SOURCES in src/data_collection.py).",
+    "2. Export it as CSV using the same column names as config.REQUIRED_COLUMNS.",
+    "3. Save it as data/raw/kpk_incidents.csv (takes priority over the demo file).",
+    "4. Set verification_status on each row honestly (e.g., 'verified', 'unverified', 'media_report').",
+    "5. Update the provenance table in data/sample/DATASET_PROVENANCE.md and the Streamlit Sources page."
+  ]
+}

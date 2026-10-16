@@ -1,0 +1,25 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local secrets / data overrides (never commit credentials)
+.env
+*.key
+secrets.toml
+.streamlit/secrets.toml
+
+# NOTE: data/sample/, data/processed/, models/, reports/ are intentionally
+# committed so the deployed Streamlit app works with the demonstration data.

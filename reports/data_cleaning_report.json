@@ -1,0 +1,79 @@
+{
+  "started_at_utc": "2026-10-16T11:44:16.962164+00:00",
+  "rows_received": 8839,
+  "columns_received": [
+    "incident_id",
+    "incident_date",
+    "district",
+    "province",
+    "incident_category",
+    "fatalities",
+    "injuries",
+    "source_name",
+    "source_url",
+    "verification_status"
+  ],
+  "note": "Missing fatalities/injuries are kept as NaN on purpose: absence of a reported figure is not evidence of zero casualties.",
+  "numeric_coercion": {
+    "fatalities": {
+      "originally_missing": 340,
+      "non_numeric_coerced_to_missing": 0,
+      "total_missing_after": 340
+    },
+    "injuries": {
+      "originally_missing": 369,
+      "non_numeric_coerced_to_missing": 0,
+      "total_missing_after": 369
+    }
+  },
+  "date_parsing": {
+    "rows_in": 8839,
+    "dropped_unparseable_dates": 5,
+    "rows_out": 8834
+  },
+  "district_normalization": {
+    "distinct_districts_after": [
+      "Abbottabad",
+      "Bajaur",
+      "Bannu",
+      "Battagram",
+      "Buner",
+      "Charsadda",
+      "Chitral",
+      "Dera Ismail Khan",
+      "Hangu",
+      "Haripur",
+      "Karak",
+      "Khyber",
+      "Kohat",
+      "Kurram",
+      "Lakki Marwat",
+      "Lower Dir",
+      "Mansehra",
+      "Mardan",
+      "Mohmand",
+      "North Waziristan",
+      "Nowshera",
+      "Peshawar",
+      "Shangla",
+      "South Waziristan",
+      "Swabi",
+      "Swat",
+      "Tank",
+      "Torghar",
+      "Upper Dir"
+    ],
+    "rows_with_missing_district": 0
+  },
+  "deduplication": {
+    "duplicate_incident_id_rows": 0,
+    "duplicate_content_rows": 34,
+    "rows_removed_total": 34,
+    "rows_remaining": 8800
+  },
+  "missing_districts": {
+    "dropped_missing_district_rows": 0
+  },
+  "rows_after_cleaning": 8800,
+  "finished_at_utc": "2026-10-16T11:44:17.181589+00:00"
+}

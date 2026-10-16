@@ -1,0 +1,331 @@
+{
+  "overview": {
+    "total_recorded_incidents": 8800,
+    "date_min": "2002-01-18",
+    "date_max": "2024-12-31",
+    "distinct_districts": 29,
+    "distinct_categories": 7,
+    "recorded_fatalities_sum": 11740.0,
+    "recorded_injuries_sum": 15714.0,
+    "fatalities_missing_n": 338,
+    "injuries_missing_n": 366,
+    "data_is_demonstration_synthetic": true,
+    "caveat": "These are counts of RECORDED incidents in this dataset, not estimates of all incidents that occurred. Reporting coverage varies over time and across districts."
+  },
+  "casualties": {
+    "fatalities_reported_n": 8462,
+    "fatalities_missing_n": 338,
+    "fatalities_total": 11740.0,
+    "fatalities_mean_per_reported_incident": 1.3873788702434413,
+    "fatalities_median": 1.0,
+    "injuries_reported_n": 8434,
+    "injuries_missing_n": 366,
+    "injuries_total": 15714.0,
+    "injuries_mean_per_reported_incident": 1.8631728717097462,
+    "injuries_median": 1.0,
+    "note": "Summaries use only rows where the field was reported. Missing values are excluded rather than imputed as zero, so totals are lower bounds on the recorded figures in this dataset."
+  },
+  "data_quality": {
+    "rows": 8800,
+    "duplicate_incident_ids": 0,
+    "missing_date_n": 0,
+    "future_dated_rows": 0,
+    "negative_fatalities": 0,
+    "negative_injuries": 0,
+    "verification_status_counts": {
+      "demonstration_synthetic": 8800
+    }
+  },
+  "frequency_change": {
+    "mean_yearly_incidents_first_half": 315.45,
+    "mean_yearly_incidents_second_half": 444.17,
+    "pct_change_first_to_second_half": 40.8,
+    "peak_year": 2013,
+    "peak_year_incidents": 963,
+    "lowest_year": 2002,
+    "lowest_year_incidents": 19,
+    "interpretation_guardrail": "Changes in RECORDED incident counts reflect both real-world change and changes in reporting coverage, source methodology, and classification. Do not treat this as a causal or predictive claim about any group."
+  },
+  "yearly_counts": [
+    {
+      "year": 2002,
+      "incidents": 19,
+      "fatalities": 21.0,
+      "injuries": 25.0
+    },
+    {
+      "year": 2003,
+      "incidents": 44,
+      "fatalities": 63.0,
+      "injuries": 68.0
+    },
+    {
+      "year": 2004,
+      "incidents": 46,
+      "fatalities": 51.0,
+      "injuries": 84.0
+    },
+    {
+      "year": 2005,
+      "incidents": 60,
+      "fatalities": 90.0,
+      "injuries": 87.0
+    },
+    {
+      "year": 2006,
+      "incidents": 74,
+      "fatalities": 118.0,
+      "injuries": 134.0
+    },
+    {
+      "year": 2007,
+      "incidents": 155,
+      "fatalities": 192.0,
+      "injuries": 240.0
+    },
+    {
+      "year": 2008,
+      "incidents": 320,
+      "fatalities": 437.0,
+      "injuries": 621.0
+    },
+    {
+      "year": 2009,
+      "incidents": 498,
+      "fatalities": 656.0,
+      "injuries": 853.0
+    },
+    {
+      "year": 2010,
+      "incidents": 654,
+      "fatalities": 935.0,
+      "injuries": 1118.0
+    },
+    {
+      "year": 2011,
+      "incidents": 757,
+      "fatalities": 1047.0,
+      "injuries": 1363.0
+    },
+    {
+      "year": 2012,
+      "incidents": 843,
+      "fatalities": 1085.0,
+      "injuries": 1435.0
+    },
+    {
+      "year": 2013,
+      "incidents": 963,
+      "fatalities": 1311.0,
+      "injuries": 1794.0
+    },
+    {
+      "year": 2014,
+      "incidents": 761,
+      "fatalities": 988.0,
+      "injuries": 1387.0
+    },
+    {
+      "year": 2015,
+      "incidents": 427,
+      "fatalities": 562.0,
+      "injuries": 720.0
+    },
+    {
+      "year": 2016,
+      "incidents": 336,
+      "fatalities": 436.0,
+      "injuries": 611.0
+    },
+    {
+      "year": 2017,
+      "incidents": 300,
+      "fatalities": 398.0,
+      "injuries": 654.0
+    },
+    {
+      "year": 2018,
+      "incidents": 379,
+      "fatalities": 482.0,
+      "injuries": 722.0
+    },
+    {
+      "year": 2019,
+      "incidents": 347,
+      "fatalities": 469.0,
+      "injuries": 573.0
+    },
+    {
+      "year": 2020,
+      "incidents": 211,
+      "fatalities": 275.0,
+      "injuries": 394.0
+    },
+    {
+      "year": 2021,
+      "incidents": 257,
+      "fatalities": 366.0,
+      "injuries": 495.0
+    },
+    {
+      "year": 2022,
+      "incidents": 327,
+      "fatalities": 435.0,
+      "injuries": 630.0
+    },
+    {
+      "year": 2023,
+      "incidents": 482,
+      "fatalities": 656.0,
+      "injuries": 854.0
+    },
+    {
+      "year": 2024,
+      "incidents": 540,
+      "fatalities": 667.0,
+      "injuries": 852.0
+    }
+  ],
+  "top_districts": [
+    {
+      "district": "Peshawar",
+      "incidents": 887,
+      "fatalities": 1190.0,
+      "injuries": 1497.0,
+      "first_recorded": "2002-01-25T00:00:00",
+      "last_recorded": "2024-12-29T00:00:00",
+      "share_of_recorded_incidents_pct": 10.08
+    },
+    {
+      "district": "Swat",
+      "incidents": 654,
+      "fatalities": 867.0,
+      "injuries": 1199.0,
+      "first_recorded": "2002-05-25T00:00:00",
+      "last_recorded": "2024-12-27T00:00:00",
+      "share_of_recorded_incidents_pct": 7.43
+    },
+    {
+      "district": "Bannu",
+      "incidents": 546,
+      "fatalities": 699.0,
+      "injuries": 943.0,
+      "first_recorded": "2002-01-21T00:00:00",
+      "last_recorded": "2024-12-19T00:00:00",
+      "share_of_recorded_incidents_pct": 6.2
+    },
+    {
+      "district": "Dera Ismail Khan",
+      "incidents": 486,
+      "fatalities": 650.0,
+      "injuries": 833.0,
+      "first_recorded": "2003-01-15T00:00:00",
+      "last_recorded": "2024-12-13T00:00:00",
+      "share_of_recorded_incidents_pct": 5.52
+    },
+    {
+      "district": "Kohat",
+      "incidents": 446,
+      "fatalities": 576.0,
+      "injuries": 826.0,
+      "first_recorded": "2003-08-20T00:00:00",
+      "last_recorded": "2024-12-18T00:00:00",
+      "share_of_recorded_incidents_pct": 5.07
+    },
+    {
+      "district": "North Waziristan",
+      "incidents": 405,
+      "fatalities": 591.0,
+      "injuries": 678.0,
+      "first_recorded": "2002-03-23T00:00:00",
+      "last_recorded": "2024-11-19T00:00:00",
+      "share_of_recorded_incidents_pct": 4.6
+    },
+    {
+      "district": "Mardan",
+      "incidents": 374,
+      "fatalities": 463.0,
+      "injuries": 602.0,
+      "first_recorded": "2003-07-08T00:00:00",
+      "last_recorded": "2024-12-21T00:00:00",
+      "share_of_recorded_incidents_pct": 4.25
+    },
+    {
+      "district": "South Waziristan",
+      "incidents": 330,
+      "fatalities": 426.0,
+      "injuries": 592.0,
+      "first_recorded": "2002-09-16T00:00:00",
+      "last_recorded": "2024-12-16T00:00:00",
+      "share_of_recorded_incidents_pct": 3.75
+    },
+    {
+      "district": "Abbottabad",
+      "incidents": 311,
+      "fatalities": 387.0,
+      "injuries": 526.0,
+      "first_recorded": "2003-10-23T00:00:00",
+      "last_recorded": "2024-12-10T00:00:00",
+      "share_of_recorded_incidents_pct": 3.53
+    },
+    {
+      "district": "Buner",
+      "incidents": 308,
+      "fatalities": 410.0,
+      "injuries": 643.0,
+      "first_recorded": "2002-01-18T00:00:00",
+      "last_recorded": "2024-12-05T00:00:00",
+      "share_of_recorded_incidents_pct": 3.5
+    }
+  ],
+  "categories": [
+    {
+      "incident_category": "armed_attack",
+      "incidents": 2427,
+      "fatalities": 3202.0,
+      "share_pct": 27.58
+    },
+    {
+      "incident_category": "explosive_device",
+      "incidents": 2338,
+      "fatalities": 3815.0,
+      "share_pct": 26.57
+    },
+    {
+      "incident_category": "security_forces_clash",
+      "incidents": 1601,
+      "fatalities": 1591.0,
+      "share_pct": 18.19
+    },
+    {
+      "incident_category": "unknown",
+      "incidents": 905,
+      "fatalities": 460.0,
+      "share_pct": 10.28
+    },
+    {
+      "incident_category": "sectarian_violence",
+      "incidents": 700,
+      "fatalities": 1470.0,
+      "share_pct": 7.95
+    },
+    {
+      "incident_category": "civil_unrest",
+      "incidents": 589,
+      "fatalities": 275.0,
+      "share_pct": 6.69
+    },
+    {
+      "incident_category": "suicide_attack",
+      "incidents": 240,
+      "fatalities": 927.0,
+      "share_pct": 2.73
+    }
+  ],
+  "sources": [
+    {
+      "source_name": "MAHSUD synthetic demonstration dataset (NOT real incidents)",
+      "incidents": 8800
+    }
+  ]
+}

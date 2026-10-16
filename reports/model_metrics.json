@@ -1,0 +1,178 @@
+{
+  "best_model": {
+    "model_name": "linear_regression",
+    "metrics_test": {
+      "mae": 6.1873,
+      "rmse": 7.4931,
+      "mean_true": 42.5833,
+      "mae_over_mean_true_pct": 14.53,
+      "mae_over_naive_diff_baseline": 0.9424
+    },
+    "metrics_train": {
+      "mae": 5.4113,
+      "rmse": 7.4155,
+      "mean_true": 32.3292,
+      "mae_over_mean_true_pct": 16.74,
+      "mae_over_naive_diff_baseline": 0.8486
+    },
+    "baseline_naive_test": {
+      "mae": 16.6667,
+      "rmse": 18.6078,
+      "mean_true": 42.5833,
+      "mae_over_mean_true_pct": 39.14,
+      "mae_over_naive_diff_baseline": 2.5386
+    },
+    "baseline_seasonal_naive_test": {
+      "mae": 15.3333,
+      "rmse": 17.6092,
+      "mean_true": 42.5833,
+      "mae_over_mean_true_pct": 36.01,
+      "mae_over_naive_diff_baseline": 2.3355
+    },
+    "n_train": 240,
+    "n_test": 24,
+    "test_start": "2023-01-01",
+    "test_end": "2024-12-01",
+    "feature_columns": [
+      "lag_1",
+      "lag_2",
+      "lag_3",
+      "lag_6",
+      "lag_12",
+      "rolling_mean_3",
+      "rolling_mean_12",
+      "trend_index",
+      "m_1",
+      "m_2",
+      "m_3",
+      "m_4",
+      "m_5",
+      "m_6",
+      "m_7",
+      "m_8",
+      "m_9",
+      "m_10",
+      "m_11",
+      "m_12"
+    ],
+    "trained_at_utc": "2026-10-16T11:44:18.309190+00:00"
+  },
+  "all_models": {
+    "linear_regression": {
+      "model_name": "linear_regression",
+      "metrics_test": {
+        "mae": 6.1873,
+        "rmse": 7.4931,
+        "mean_true": 42.5833,
+        "mae_over_mean_true_pct": 14.53,
+        "mae_over_naive_diff_baseline": 0.9424
+      },
+      "metrics_train": {
+        "mae": 5.4113,
+        "rmse": 7.4155,
+        "mean_true": 32.3292,
+        "mae_over_mean_true_pct": 16.74,
+        "mae_over_naive_diff_baseline": 0.8486
+      },
+      "baseline_naive_test": {
+        "mae": 16.6667,
+        "rmse": 18.6078,
+        "mean_true": 42.5833,
+        "mae_over_mean_true_pct": 39.14,
+        "mae_over_naive_diff_baseline": 2.5386
+      },
+      "baseline_seasonal_naive_test": {
+        "mae": 15.3333,
+        "rmse": 17.6092,
+        "mean_true": 42.5833,
+        "mae_over_mean_true_pct": 36.01,
+        "mae_over_naive_diff_baseline": 2.3355
+      },
+      "n_train": 240,
+      "n_test": 24,
+      "test_start": "2023-01-01",
+      "test_end": "2024-12-01",
+      "feature_columns": [
+        "lag_1",
+        "lag_2",
+        "lag_3",
+        "lag_6",
+        "lag_12",
+        "rolling_mean_3",
+        "rolling_mean_12",
+        "trend_index",
+        "m_1",
+        "m_2",
+        "m_3",
+        "m_4",
+        "m_5",
+        "m_6",
+        "m_7",
+        "m_8",
+        "m_9",
+        "m_10",
+        "m_11",
+        "m_12"
+      ],
+      "trained_at_utc": "2026-10-16T11:44:18.309190+00:00"
+    },
+    "random_forest": {
+      "model_name": "random_forest",
+      "metrics_test": {
+        "mae": 7.4683,
+        "rmse": 9.0536,
+        "mean_true": 42.5833,
+        "mae_over_mean_true_pct": 17.54,
+        "mae_over_naive_diff_baseline": 1.1376
+      },
+      "metrics_train": {
+        "mae": 2.5928,
+        "rmse": 3.7494,
+        "mean_true": 32.3292,
+        "mae_over_mean_true_pct": 8.02,
+        "mae_over_naive_diff_baseline": 0.4066
+      },
+      "baseline_naive_test": {
+        "mae": 16.6667,
+        "rmse": 18.6078,
+        "mean_true": 42.5833,
+        "mae_over_mean_true_pct": 39.14,
+        "mae_over_naive_diff_baseline": 2.5386
+      },
+      "baseline_seasonal_naive_test": {
+        "mae": 15.3333,
+        "rmse": 17.6092,
+        "mean_true": 42.5833,
+        "mae_over_mean_true_pct": 36.01,
+        "mae_over_naive_diff_baseline": 2.3355
+      },
+      "n_train": 240,
+      "n_test": 24,
+      "test_start": "2023-01-01",
+      "test_end": "2024-12-01",
+      "feature_columns": [
+        "lag_1",
+        "lag_2",
+        "lag_3",
+        "lag_6",
+        "lag_12",
+        "rolling_mean_3",
+        "rolling_mean_12",
+        "trend_index",
+        "m_1",
+        "m_2",
+        "m_3",
+        "m_4",
+        "m_5",
+        "m_6",
+        "m_7",
+        "m_8",
+        "m_9",
+        "m_10",
+        "m_11",
+        "m_12"
+      ],
+      "trained_at_utc": "2026-10-16T11:44:18.309190+00:00"
+    }
+  }
+}
